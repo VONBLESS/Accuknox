@@ -39,7 +39,7 @@ This proves that signals are send and handler are executed immediately and one c
 Question 2: Do django signals run in the same thread as the caller? Please support your answer with a code snippet that conclusively proves your stance. The code does not need to be elegant and production ready, we just need to understand your logic.
 
 Answer  
-To answer this we can check if thread id of the signal handler and the caller match, which they do 
+To answer this we can check if thread id of the signal handler and the caller match, which they do   
 Similarly in Accuknox model we can add
 ```
 Import thrading 
