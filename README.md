@@ -12,7 +12,7 @@ Topic: Django Signals
 
 Question 1: By default are django signals executed synchronously or asynchronously? Please support your answer with a code snippet that conclusively proves your stance. The code does not need to be elegant and production ready, we just need to understand your logic.
 
-Answer
+Answer  
 Django, signals are executed synchronously
 So have worked with post_save signal so here’s an example
 
@@ -38,7 +38,7 @@ This proves that signals are send and handler are executed immediately and one c
 
 Question 2: Do django signals run in the same thread as the caller? Please support your answer with a code snippet that conclusively proves your stance. The code does not need to be elegant and production ready, we just need to understand your logic.
 
-Answer
+Answer  
 To answer this we can check if thread id of the signal handler and the caller match, which they do 
 Similarly in Accuknox model we can add
 ```
@@ -73,7 +73,7 @@ So in my case the thread ids match
 
 Question 3: By default do django signals run in the same database transaction as the caller? Please support your answer with a code snippet that conclusively proves your stance. The code does not need to be elegant and production ready, we just need to understand your logic.
 
-Answer
+Answer  
 These are my models
 ```
 class Accuknox(models.Model):
@@ -132,6 +132,7 @@ An instance of the Rectangle class requires length:int and width:int to be initi
 We can iterate over an instance of the Rectangle class 
 When an instance of the Rectangle class is iterated over, we first get its length in the format: {'length': <VALUE_OF_LENGTH>} followed by the width {width: <VALUE_OF_WIDTH>}
 
+Answer  
 ```
 class Rectangle:
     def __init__(self, length: int, width: int):
