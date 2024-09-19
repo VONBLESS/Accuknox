@@ -9,7 +9,7 @@ import threading
 def handler(sender, instance, **kwargs):
     print(f"Signal thread id : {threading.get_ident()}")
     print("Signal initiated")
-    # time.sleep(5)
+    time.sleep(5)
     print("Signal Received task finished")
 
 
