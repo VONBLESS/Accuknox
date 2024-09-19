@@ -5,7 +5,7 @@ answers to https://docs.google.com/forms/d/e/1FAIpQLSeIZq-YPIre8aMVwxE5BwsR-tC0S
 
 
 
-
+Answers are in Accunox -> djangoSignals app please refer those as refrence  
 Questions for Django Trainee at Accuknox
 
 Topic: Django Signals
@@ -74,6 +74,7 @@ So in my case the thread ids match
 Question 3: By default do django signals run in the same database transaction as the caller? Please support your answer with a code snippet that conclusively proves your stance. The code does not need to be elegant and production ready, we just need to understand your logic.
 
 Answer  
+Yes, they run in the same database transaction as the caller. i.e a signal from a model creation trigger another model instance creation and the creation fails for the second model none of the model instance is created 
 These are my models
 ```
 class Accuknox(models.Model):
@@ -113,10 +114,10 @@ def tes_transaction_view(request):
     return HttpResponse("hello")
 ```
 So initially the signal count will be 2 and then 1
-You can access this route to assert my statement after running the project locally on
+You can access this route below to assert my statement after running the project locally,  
 http://127.0.0.1:8000/test-signal/
-
-I.e Accuknox model triggers signal to create a AccuknoxMessage object and it is creat.
+and check the terminal or logs for reference
+I.e Accuknox model triggers signal to create a AccuknoxMessage object and it is not creat.  
 Then exception is raised and rollback happens so in the admin panel you can see no instance of Accuknox model is created
 
 
@@ -147,4 +148,7 @@ rect = Rectangle(100, 100)
 for dim in rect:
     print(dim, end= " ")    
 ```
+
+you can access to answers in   
+http://127.0.0.1:8000/test-rectangle/
 
