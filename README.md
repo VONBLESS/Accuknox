@@ -152,3 +152,20 @@ for dim in rect:
 you can access to answers in   
 http://127.0.0.1:8000/test-rectangle/
 
+## Overview
+answers to https://docs.google.com/forms/d/e/1FAIpQLSeIZq-YPIre8aMVwxE5BwsR-tC0S_bu68gDMePmWXVP50hKxA/viewform
+
+## Tech Stack
+- See repository files for implementation details.
+
+## Quick Start
+```bash
+Review the source files and run with your preferred workflow.
+```
+
+## Project Structure
+- `.idea/`
+- `Accuknox/`
+
+## Contributing
+Contributions are welcome. Open an issue or submit a pull request.
