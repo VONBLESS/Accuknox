@@ -32,6 +32,39 @@ Add your project license details here.
 ## Legacy Notes
 
 # Accuknox
+
+answers to https://docs.google.com/forms/d/e/1FAIpQLSeIZq-YPIre8aMVwxE5BwsR-tC0S_bu68gDMePmWXVP50hKxA/viewform
+
+## Overview
+This repository contains the implementation, configuration, and supporting assets for this project.
+
+## Features
+- Dashboard/admin views
+- Automated tests
+
+## Tech Stack
+- Python
+
+## Project Structure
+- `.idea/`
+- `Accuknox/`
+
+## Quick Start
+```bash
+Review project files and run using the main entrypoint.
+```
+
+## Contributing
+Contributions are welcome. Please open an issue for major changes before submitting a PR.
+
+## License
+Add your project license details here.
+
+---
+
+## Legacy Notes
+
+# Accuknox
 answers to https://docs.google.com/forms/d/e/1FAIpQLSeIZq-YPIre8aMVwxE5BwsR-tC0S_bu68gDMePmWXVP50hKxA/viewform
 
 
